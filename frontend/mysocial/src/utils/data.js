@@ -162,6 +162,7 @@ export const searchQuery = (searchTerm) => {
   return query;
 };
 
+//*[_type == ...] sanity query, read the document
 export const userQuery = (userId) => {
   const query = `*[_type == "user" && _id == '${userId}']`;
   return query;
