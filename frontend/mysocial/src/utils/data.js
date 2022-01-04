@@ -136,6 +136,7 @@ export const pinDetailMorePinQuery = (pin) => {
   return query;
 };
 
+//Sanity syntax, read more at https://www.sanity.io/docs/how-queries-work
 export const searchQuery = (searchTerm) => {
   const query = `*[_type == "pin" && title match '${searchTerm}*' || category match '${searchTerm}*' || about match '${searchTerm}*']{
         image{

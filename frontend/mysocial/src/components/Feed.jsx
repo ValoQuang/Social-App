@@ -14,6 +14,7 @@ const Feed = () => {
   useEffect(() => {
     if (categoryId) {
       setLoading(true);
+      //searchquery logic from utils/data
       const query = searchQuery(categoryId);
       client.fetch(query).then((data) => {
         setPins(data);
@@ -21,7 +22,6 @@ const Feed = () => {
       });
     } else {
       setLoading(true);
-
       client.fetch(feedQuery).then((data) => {
         setPins(data);
         setLoading(false);
