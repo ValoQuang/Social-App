@@ -2,8 +2,6 @@ import React from 'react';
 import Masonry from 'react-masonry-css';
 import Pin from './Pin';
 
-//google images layout, make pictures look natural
-//3000 pixel, show 6 items, ....
 const breakpointColumnsObj = {
   default: 4,
   3000: 6,
@@ -12,7 +10,7 @@ const breakpointColumnsObj = {
   1000: 2,
   500: 1,
 };
-//pins from Feed.jsx
+
 const MasonryLayout = ({ pins }) => (
   <Masonry className="flex animate-slide-fwd" breakpointCols={breakpointColumnsObj}>
     {pins?.map((pin) => <Pin key={pin._id} pin={pin} className="w-max" />)}
