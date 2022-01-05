@@ -39,7 +39,7 @@ const PinDetail = ({ user }) => {
   const addComment = () => {
     if (comment) {
       setAddingComment(true);
-
+      //add comments
       client
         .patch(pinId)
         .setIfMissing({ comments: [] })
