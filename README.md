@@ -11,4 +11,6 @@ The project where I learned how to use React Js, styling with TailWind CSS. For 
 
 # Back-end:
 + Sanity Io 
++ Express
++ Node Js
 
